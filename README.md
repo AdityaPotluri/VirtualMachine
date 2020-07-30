@@ -4,3 +4,9 @@ While some virtual machines are meant to emulate servers this just emulates some
 
 Wikipedia gives a good high level description into the virtual machine https://en.wikipedia.org/wiki/Virtual_machine
 More programming based description on virtual machines                 https://justinmeiners.github.io/lc3-vm/#1:9
+
+
+<p align="center">
+  <img src="no_vim.gif" width="350" title="hover text">
+  <img src="vm.gif" width="350" title="hover text">
+</p>
