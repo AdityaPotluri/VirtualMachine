@@ -7,6 +7,6 @@ More programming based description on virtual machines                 https://j
 
 
 <p align="center">
-  <img src="no_vim.gif" width="350" title="hover text">
+  <img src="no_vm.gif" width="350" title="hover text">
   <img src="vm.gif" width="350" title="hover text">
 </p>
