@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdint.h>
-
+#include<stdbool.h>
 
 // this memory will allocate about 128kb worth of memory in our vm because UINT16_MAX = 65535
 uint16_t memory[UINT16_MAX];
@@ -51,6 +51,50 @@ enum {
 };
 
 
-int main() {
+
+int main(int argc, const char* argv[]) {
+    enum {PC_START = 0x3000 };
+    registers[R_PC] = PC_START;
+
+    bool running = true;
+    while(running) {
+        uint16_t instr = mem_read(registers[R_PC]);
+        uint16_t op = instr >> 12;
+        
+        switch (op) {
+            case OP_ADD:
+                break;
+            case OP_AND:
+                break;
+            case OP_BR:
+                break;
+            case OP_JMP:
+                break;
+            case OP_JSR:
+                break;
+            case OP_LD:
+                break;
+            case OP_LDI:
+                break;
+            case OP_LDR:
+                break;
+            case OP_LEA:
+                break;
+            case OP_NOT:
+                break;
+            case OP_RES:
+                break;
+            case OP_RTI:
+                break;
+            case OP_ST:
+                break;
+            case OP_STI:
+                break;
+            case OP_STR:
+                break;
+            case OP_TRAP:
+                break;
+         }
+    }
 
 }
