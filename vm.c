@@ -98,3 +98,25 @@ int main(int argc, const char* argv[]) {
     }
 
 }
+
+
+
+uint16_t sign_extend(uint16_t x, int bitCount) {
+    if((x << (bitCount-1)) & 1) {
+        x |= (0xFFFF << bitCount);
+    }
+    return x;
+}
+
+void update_flags(uint16_t r) {
+    if(registers[r] == 0) {
+        registers[R_COND] = FL_ZERO;
+    }
+    else if(registers[r] >> 15) {
+        registers[R_COND] = FL_NEG;
+    }
+
+    else {
+        registers[R_COND] = FL_POS;
+    }
+}
