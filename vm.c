@@ -63,7 +63,9 @@ int main(int argc, const char* argv[]) {
         
         switch (op) {
             case OP_ADD:
-                break;
+                {
+                    uint16_t r = (instr >> 9) & 0x7;
+                }
             case OP_AND:
                 break;
             case OP_BR:
